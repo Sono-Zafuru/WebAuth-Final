@@ -1,0 +1,12 @@
+/*
+    Solano Sayasetha
+    styles.css
+*/
+
+head, body, header, main, footer {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
