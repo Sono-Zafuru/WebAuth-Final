@@ -8,6 +8,11 @@
     src: url('../assets/DAGGERSQUARE.otf');
 }
 
+@font-face {
+	font-family: 'Source Sans 3';
+	src: url('../assets/SourceSans3-VariableFont_wght.ttf');
+}
+
 @keyframes navUnderline {
 	from {width: 0%}
 	to {width: 100%}
@@ -27,6 +32,7 @@ head, body, header, main, footer {
 }
 
 body {
+	font-family: 'Source Sans 3', sans-serif;
 	font-size: 1.2em;
 }
 
