@@ -147,6 +147,11 @@ aside {
 	float: right;
 }
 
+iframe {
+	width: 100%;
+	height: auto;
+}
+
 footer {
 	clear: both;
 	text-align: center;
