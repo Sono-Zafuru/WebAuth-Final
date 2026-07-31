@@ -1,0 +1,4 @@
+/*
+    Solano Sayasetha
+    myScript.js
+*/

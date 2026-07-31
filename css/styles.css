@@ -1,0 +1,147 @@
+/*
+    Solano Sayasetha
+    styles.css
+*/
+
+@font-face {
+    font-family: 'DAGGERSQUARE';
+    src: url('../assets/DAGGERSQUARE.otf');
+}
+
+@keyframes navUnderline {
+	from {width: 0%}
+	to {width: 100%}
+}
+
+@keyframes navHover {
+	from {color: auto}
+	to {color: goldenrod}
+}
+
+head, body, header, main, footer {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+body {
+	font-size: 1.2em;
+}
+
+header {
+	overflow: hidden;
+}
+
+header div {
+	float: left;
+	width: 100%;
+	height: 5px;
+	background-color: goldenrod;
+}
+
+h1 a, li a {
+	text-decoration: none;
+}
+
+h1 {
+	float: left;
+	font-family: 'DAGGERSQUARE', sans-serif;
+	padding: 0px 20px;
+}
+
+h1 a {
+	color: black;
+}
+
+header ul {
+	list-style-type: none;
+	font-size: 1.2em;
+}
+
+nav li {
+	float: left;
+	padding: 10px;
+}
+
+nav a {
+	padding: 15px 0px;
+}
+
+li a {
+	color: black;
+}
+
+li div {
+	width: 0%;
+	margin-top: 5px;
+	height: 7px;
+	background-color: black;
+}
+
+a:hover:not(.active) {
+	animation-name: navHover;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+#nav1:hover+#link1, #nav2:hover+#link2, #nav3:hover+#link3, #nav4:hover+#link4 {
+	animation-name: navUnderline;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+.active {
+	color: goldenrod;
+}
+
+#linkA {
+	width: 100%;
+	background-color: goldenrod;
+}
+
+main {
+	padding-left: 20px;
+	width: 75%;
+	float: left;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	column-gap: 20px;
+	padding: 10px;
+}
+
+.container section {
+	background-color: #f1f1f1;
+	border: solid black;
+	padding: 10px 30px;
+}
+
+.container a {
+	color: navy;
+	text-decoration: none;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	column-gap: 10px;
+}
+
+figure {
+	padding: 5px;
+	text-align: center;
+}
+
+aside {
+	width: 20%;
+	float: right;
+}
+
+footer {
+	clear: both;
+	text-align: center;
+}
