@@ -125,13 +125,6 @@ main {
 	text-decoration: none;
 }
 
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	padding: 0 15px;
-}
-
 figure {
 	padding: 5px;
 	text-align: center;
@@ -140,6 +133,10 @@ figure {
 aside {
 	width: 20%;
 	float: right;
+}
+
+article p {
+	margin: 15px;
 }
 
 iframe {
@@ -157,29 +154,76 @@ footer {
 
 .infoTable {
 	float: right;
-	width: 300px;
-	border-style: dotted;
+	width: 30%;
+	max-width: 300px;
+	margin: 0 10px;
+}
+
+.infoTable img {
+	width: 100%;
 }
 
 .infoTable table {
 	width: 100%;
-	padding: 5px;
+}
+
+.infoTable td {
+	padding: 3px;
 }
 
 .infoTable tr:nth-child(even) {
-	background-color: lightblue;
+	background-color: #fafad2;
 }
 
-/* Style Selectors for Gallery in projects.html */
+/* Style Selectors for Gallery in "projects.html" */
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
 
 .galImg {
 	position: relative;
 	width: calc(25% - 20px);
+	margin: 20px;
+}
+
+.galImg img {
+	width: 100%;
 	height: auto;
-	margin: 10px;
 	transition: 0.3s;
 }
 
-.galImg:hover {
+.galImg img:hover {
 	transform: scale(1.1);
+}
+
+.desc {
+	width: 100%;
+	text-align: center;
+}
+
+/* Style Selectors for "resume.html" */
+
+.resume {
+	margin: 5px 0;
+	padding: 0 10px;
+	border: solid goldenrod;
+}
+
+section div {
+	padding-left: 10px;
+	margin-bottom: 15px;
+	border-left-style: solid;
+}
+
+.skillTable {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 10px;
+}
+
+.skillTable tr:nth-child(odd) {
+	background-color: #fafad2;
 }
