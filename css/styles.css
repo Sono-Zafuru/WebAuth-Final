@@ -212,7 +212,7 @@ footer {
 	border: solid goldenrod;
 }
 
-section div {
+.resume div {
 	padding-left: 10px;
 	margin-bottom: 15px;
 	border-left-style: solid;
